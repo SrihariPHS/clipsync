@@ -124,8 +124,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, SyncEn
 
     private func syncSnapshot() -> [Clip] {
         // Keep the whole history message comfortably under the frame limit.
-        // Base64 adds roughly a third, and JSON adds a little more.
-        var payloadBudget = 6 * 1024 * 1024
+        // Base64 adds roughly a third, and JSON escaping can add more.
+        var payloadBudget = 4 * 1024 * 1024
         var imageBudget = ClipLimits.maxHistoryImageBytes
         var result: [Clip] = []
 

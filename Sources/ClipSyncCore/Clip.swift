@@ -89,6 +89,6 @@ public enum ClipLimits {
     public static let maxImageBytes = 8 * 1024 * 1024
 
     /// Images are fetched from history when a peer connects. Keep the total
-    /// under this budget so a history message stays inside one frame.
-    public static let maxHistoryImageBytes = 4 * 1024 * 1024
+    /// small enough that the encoded history stays inside one frame.
+    public static let maxHistoryImageBytes = 3 * 1024 * 1024
 }
