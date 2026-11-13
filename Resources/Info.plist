@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>ClipSync</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.srihariphs.clipsync</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>ClipSync</string>
+	<key>CFBundleDisplayName</key>
+	<string>ClipSync</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>13.0</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>MIT License — Srihari Dhanasekaran</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>ClipSync finds other Macs on your local network and syncs clipboard items directly between them.</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_clipsync._tcp</string>
+	</array>
+</dict>
+</plist>
