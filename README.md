@@ -120,7 +120,7 @@ Removing the app is enough to stop syncing. The two commands above also remove s
 
 ## Limits
 
-- Text up to 256 KB and PNG images up to 5 MB. Files, PDFs, and rich text are not synced yet.
+- Text up to 256 KB and PNG images up to 8 MB. Files, PDFs, and rich text are not synced yet.
 - History keeps 60 clips and at most 12 images.
 - Only copies made while sync is on are captured.
 - Same local network only. There is no relay over the internet.

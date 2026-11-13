@@ -7,7 +7,7 @@ public enum FrameError: Error, Equatable {
 /// Length-prefixed framing: a 4-byte big-endian length followed by JSON.
 public enum FrameCodec {
     public static let headerSize = 4
-    /// The largest image we accept is 5 MB. Base64 plus JSON stays well under this.
+    /// The largest image we accept is 8 MB. Base64 plus JSON stays under this.
     public static let maxFrameSize = 16 * 1024 * 1024
 
     public static func encode(_ payload: Data) throws -> Data {

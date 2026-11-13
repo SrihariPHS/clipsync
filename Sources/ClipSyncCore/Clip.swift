@@ -86,7 +86,7 @@ public struct Clip: Codable, Identifiable, Equatable, Sendable {
 
 public enum ClipLimits {
     public static let maxTextBytes = 256 * 1024
-    public static let maxImageBytes = 5 * 1024 * 1024
+    public static let maxImageBytes = 8 * 1024 * 1024
 
     /// Images are fetched from history when a peer connects. Keep the total
     /// under this budget so a history message stays inside one frame.
