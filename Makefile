@@ -27,6 +27,8 @@ install: build
 
 uninstall:
 	-osascript -e 'quit app "ClipSync"' 2>/dev/null || true
+	-launchctl bootout gui/$$(id -u)/com.srihariphs.clipsync 2>/dev/null || true
+	rm -f $$HOME/Library/LaunchAgents/com.srihariphs.clipsync.plist
 	rm -rf /Applications/ClipSync.app
 
 clean:

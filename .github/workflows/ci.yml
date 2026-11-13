@@ -17,5 +17,8 @@ jobs:
       - name: Test
         run: swift test
 
+      - name: Package app
+        run: make build
+
       - name: Loopback self-test
-        run: swift run ClipSync --self-test
+        run: build/ClipSync.app/Contents/MacOS/ClipSync --self-test

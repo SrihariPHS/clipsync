@@ -381,6 +381,7 @@ final class SyncEngine {
     private func handleLocked(_ envelope: Envelope, on peer: PeerConnection) {
         guard envelope.version == ProtocolVersion.current else {
             reportLocked("\(envelope.senderName) is running a different ClipSync version. Update both Macs.")
+            blockedUntil[envelope.senderID] = Date().addingTimeInterval(60)
             peer.send(.error("Protocol version mismatch", sender: identity, codeHash: codeHash))
             peer.close(reason: "Protocol version mismatch")
             return

@@ -110,6 +110,8 @@ Move the app to `/Applications` (`make install` does this), try again, and appro
 
 ```sh
 osascript -e 'quit app "ClipSync"'
+launchctl bootout gui/$(id -u)/com.srihariphs.clipsync 2>/dev/null || true
+rm -f ~/Library/LaunchAgents/com.srihariphs.clipsync.plist
 rm -rf ~/Library/Application\ Support/ClipSync
 defaults delete com.srihariphs.clipsync
 ```
