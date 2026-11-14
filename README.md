@@ -116,7 +116,7 @@ rm -rf ~/Library/Application\ Support/ClipSync
 defaults delete com.srihariphs.clipsync
 ```
 
-Removing the app is enough to stop syncing. The two commands above also remove stored history and settings.
+Removing the app is enough to stop syncing. The reset block above also removes stored history and settings.
 
 ## Limits
 
